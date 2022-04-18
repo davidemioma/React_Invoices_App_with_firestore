@@ -1,0 +1,14 @@
+.lists {
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .lists {
+    height: 80vh;
+    overflow: scroll;
+  }
+
+  .lists::-webkit-scrollbar {
+    display: none;
+  }
+}

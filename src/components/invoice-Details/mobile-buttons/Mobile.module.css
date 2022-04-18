@@ -1,0 +1,10 @@
+.mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.form {
+  display: grid;
+  background: #fff;
+  color: black;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.icon {
+  font-size: 30px;
+  justify-self: center;
+}
+
+.form h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form button {
+  justify-self: center;
+  width: 30%;
+  padding: 0.7rem 1rem;
+  background: #7c5dfa;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,76 @@
+.status {
+  width: 120px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status_name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.color_dark {
+  color: #fff;
+}
+
+.color_light {
+  color: black;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.status_dark .green {
+  background-color: #1f2c3f;
+}
+
+.status_light .green {
+  background-color: #f3fdf9;
+}
+
+.green .dot {
+  background-color: #33d69f;
+}
+
+.green .statusName {
+  color: #33d69f;
+}
+
+.status_dark .orange {
+  background-color: #2b2736;
+}
+
+.status_light .orange {
+  background-color: #fff8f0;
+}
+
+.orange .dot {
+  background-color: #ff8f00;
+}
+
+.orange .statusName {
+  color: #ff8f00;
+}
+
+.status_dark .grey {
+  background-color: #292c45;
+}
+
+.status_light .grey {
+  background-color: #f3f3f5;
+}
+
+.grey .dot {
+  background-color: #dfe3fa;
+}
+
+.grey .statusName {
+  color: #dfe3fa;
+}

@@ -1,0 +1,44 @@
+.container {
+  margin-top: 2rem;
+}
+
+.bg_dark {
+  background: #1e2139;
+}
+
+.bg_light {
+  background: #fff;
+}
+
+.header {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.btns_desktop {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .status {
+    justify-content: unset;
+    gap: 0.7rem;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btns_desktop {
+    display: block;
+  }
+}

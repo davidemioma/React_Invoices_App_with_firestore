@@ -1,0 +1,16 @@
+.back_btn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+  margin-bottom: 1.5rem;
+}
+
+.btn_dark {
+  color: #fff;
+}
+
+.btn_light {
+  color: black;
+}

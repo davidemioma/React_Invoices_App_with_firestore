@@ -1,0 +1,80 @@
+.backdrop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+}
+
+.bg_dark {
+  background: #141625;
+}
+
+.bg_light {
+  background: #fff;
+}
+
+.modal {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  overflow-y: scroll;
+  width: 100%;
+  padding: 1.5rem 0.4rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.backdrop_open {
+  display: block;
+}
+
+.backdrop_closed {
+  display: none;
+}
+
+.modal_open {
+  animation: show_modal 1.1s ease-out forwards;
+}
+
+.modal_closed {
+  animation: close_modal 1s ease-out forwards;
+}
+
+@keyframes show_modal {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes close_modal {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .backdrop {
+    left: 70px;
+    top: 0;
+  }
+
+  .modal {
+    width: 60%;
+    left: 70px;
+    top: 0;
+    padding: 2rem;
+  }
+}

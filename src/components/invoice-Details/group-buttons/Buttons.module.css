@@ -1,0 +1,22 @@
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btns button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.btn_edit {
+  background: #dfe3fa80;
+}
+
+.btn_delete {
+  background: #ec5757;
+}
+
+.btn_mark {
+  background: #7c5dfa;
+}

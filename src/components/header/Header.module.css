@@ -1,0 +1,64 @@
+.header {
+  padding: 2rem 0;
+}
+
+.header_top {
+  margin-bottom: 1rem;
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks button,
+.tasks button span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasks button {
+  gap: 0.4rem;
+  background-color: #7c5dfa;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.tasks button span {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.tasks button span img:hover {
+  animation: spinner 0.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header_top {
+    margin-bottom: 0;
+  }
+
+  .tasks {
+    justify-content: unset;
+    gap: 1rem;
+  }
+}

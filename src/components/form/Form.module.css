@@ -1,0 +1,58 @@
+.inputs,
+.double_inputs {
+  display: grid;
+  gap: 0.7rem 0;
+}
+
+.item_list {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.action_btn,
+.edit_actions {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 370px) {
+  .action_btn,
+  .edit_actions {
+    display: grid;
+    gap: 1rem;
+  }
+}
+
+.btn_add {
+  width: 30%;
+  padding: 0.5rem 1rem;
+  background: #7c5dfa;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .btn_add {
+    width: 50%;
+  }
+}
+
+.btn_flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1023px) {
+  .form {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .double_inputs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 0.5rem;
+  }
+}

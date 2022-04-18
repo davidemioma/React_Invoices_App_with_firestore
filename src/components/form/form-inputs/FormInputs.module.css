@@ -1,0 +1,26 @@
+.inputs {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.inputs label {
+  font-size: 0.7rem;
+  color: #7e88c3;
+}
+
+.inputs input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+}
+
+.bg_dark {
+  background: #1e2139;
+  color: #fff;
+}
+
+.bg_light {
+  background: #e6e6e6;
+  color: black;
+}

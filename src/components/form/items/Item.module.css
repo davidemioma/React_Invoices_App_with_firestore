@@ -1,0 +1,29 @@
+.actions {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 343px) {
+}
+
+.actions p span {
+  color: #7c5dfa;
+}
+
+.btn_add {
+  background: #ff8f00;
+  color: #fff;
+  display: inline-flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.btn_delete {
+  background: none;
+  display: inline-flex;
+  align-items: center;
+}

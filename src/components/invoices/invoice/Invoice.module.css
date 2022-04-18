@@ -1,0 +1,64 @@
+.bg_dark {
+  background: #1e2139;
+}
+
+.bg_light {
+  background: #fff;
+}
+
+.invoice {
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.invoice:hover {
+  border: 1px solid #9277ff;
+}
+
+@media screen and (max-width: 335px) {
+  .id {
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .invoice {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .invoice span {
+    justify-self: center;
+  }
+
+  .id {
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .invoice {
+    display: grid;
+    gap: 1.3rem 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .invoice span,
+  .name {
+    justify-self: end;
+  }
+
+  .invoice img {
+    display: none;
+  }
+}

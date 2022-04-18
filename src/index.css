@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-in;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.dark_mode {
+  background-color: #141625;
+}
+
+.light_mode {
+  background-color: #e6e6e6;
+}
+
+.title {
+  color: #9277ff;
+  font-size: 0.7rem;
+  padding: 1rem 0;
+}
+
+.item_list {
+  color: #9277ff;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+.btn_discard,
+.btn_draft,
+.btn_send {
+  padding: 0.5rem 1rem;
+}
+
+.btn_discard {
+  background: #dfe3fa;
+  color: #9277ff;
+}
+
+.btn_draft {
+  background: #1e2139;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.btn_send {
+  background: #9277ff;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 60%;
+  }
+}
