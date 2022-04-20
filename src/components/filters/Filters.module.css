@@ -1,7 +1,4 @@
 .filters {
-  display: grid;
-  gap: 1rem;
-  width: 200px;
   position: relative;
   z-index: 10;
 }
@@ -19,6 +16,7 @@
 .filter_top,
 .filter_list {
   padding: 0.5rem 0.8rem;
+  width: 200px;
 }
 
 .filter_top {
@@ -34,9 +32,8 @@
 }
 
 .filter_list {
-  position: fixed;
-  width: 200px;
-  top: 8.9rem;
+  position: absolute;
+  margin-top: 0.5rem;
 }
 
 .rotate {
@@ -52,23 +49,4 @@
 
 .filter_list p:hover {
   opacity: 1;
-}
-
-@media screen and (max-width: 400px) {
-  .filters,
-  .filter_list {
-    width: 150px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .filter_list {
-    top: 13rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .filter_list {
-    top: 5.5rem;
-  }
 }
